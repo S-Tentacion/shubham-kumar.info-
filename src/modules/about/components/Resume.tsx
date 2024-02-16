@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { LuDownload as DownloadIcon } from 'react-icons/lu';
 
 const Resume = () => {
-  const RESUME_URL = 'https://drive.google.com/file/d/1jCMGxOTcR2mL1r_UkSoXQe88ZvZYm-xU/view?usp=sharing';
+  const RESUME_URL = 'https://drive.google.com/file/d/1nkTbB9rStBWqPwCzwxHPqIG8haGjtkVA/view?usp=sharing';
 
   return (
     <Link
