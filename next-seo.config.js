@@ -1,4 +1,4 @@
-const canonicalUrl = '';
+const canonicalUrl = 'https://www.shubham-kumar.info/';
 const metaImage = '/images/shubham.jpeg';
 const metaDescription =
   'Seasoned Software Engineer especially in Frontend side, with a passion for creating pixel-perfect web experiences';
