@@ -63,7 +63,7 @@ const CodingActive = ({ lastUpdate }: CodingActiveProps) => {
           >
             WakaTime
           </Link>
-          <span> last 7 days stats.</span>
+          <span> all time statistics.</span>
         </div>
         <div className='text-sm text-neutral-600 dark:text-neutral-500'>
           Last update: {renderLastUpdate()}

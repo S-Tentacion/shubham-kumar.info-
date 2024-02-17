@@ -9,7 +9,7 @@ export const getReadStats = async (): Promise<{
   status: number;
   data: any;
 }> => {
-  const response = await axios.get(`${STATS_ENDPOINT}/last_30_days`, {
+  const response = await axios.get(`${STATS_ENDPOINT}/all_time`, {
     params: {
       api_key: process.env.WAKATIME_API_KEY,
     },
@@ -19,7 +19,7 @@ export const getReadStats = async (): Promise<{
   if (status > 400) return { status, data: [] };
 
   const getData = response.data;
-  const start_date = getData?.data?.created_at ?? null;
+  const start_date = getData?.data?.start ?? null;
   const end_date = getData?.data?.end ?? null;
   const last_update = getData?.data?.modified_at ?? null;
 
