@@ -19,7 +19,7 @@ export const getReadStats = async (): Promise<{
   if (status > 400) return { status, data: [] };
 
   const getData = response.data;
-  const start_date = getData?.data?.start ?? null;
+  const start_date = getData?.data?.created_at ?? null;
   const end_date = getData?.data?.end ?? null;
   const last_update = getData?.data?.modified_at ?? null;
 
